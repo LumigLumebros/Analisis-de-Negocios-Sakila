@@ -27,7 +27,7 @@ Toda la auditoría y el código utilizado para comprobar la veracidad de las mé
 
 ## 📊 Dashboard Ejecutivo y Hallazgos Clave
 
-![Dashboard Principal](./assets/dashboard_principal.png)
+![Dashboard Principal](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/dashboard_principal.png)
 
 A partir del análisis de los datos modelados, se extrajeron los siguientes insights operativos:
 * **Rendimiento Global:** La operación mantiene un volumen de ingresos de **$67.41 mil**, respaldado por una base sólida de **584 clientes activos**.
@@ -43,7 +43,7 @@ El proyecto se soporta sobre una infraestructura relacional robusta, optimizada 
 1. **Base de Datos Original:** Se incluyen los scripts de despliegue y el diagrama Entidad-Relación nativo dentro de la carpeta `[database/](./database/)` para permitir la replicación del entorno.
 2. **Modelo Analítico:** Se implementó un modelo estructurado en Power BI, asegurando relaciones limpias entre las tablas de transacciones y los catálogos.
 
-![Modelo de Relaciones](./assets/modelo_relaciones.png)
+![Modelo de Relaciones](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/modelo_relaciones.png)
 
 ---
 
