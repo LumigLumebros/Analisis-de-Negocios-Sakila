@@ -19,13 +19,13 @@ The dashboard centralizes multiple data sources to provide immediate answers to 
 Before building any graphical representation in Power BI, I developed native SQL queries to calculate the exact results directly in the database engine. I rigorously contrasted each chart on the dashboard with these queries to ensure data accuracy and eliminate biases, aggregation errors, or poorly defined relationships.
 
 All the auditing and the code I used to verify these visual metrics are documented here:
-👉 **[View validation queries in Validacion_Metricas.sql](./Validacion_Metricas.sql)**
+👉 **[View validation queries in Validacion_Metricas.sql](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Metrics_validation.sql)**
 
 ---
 
 ## 📊 Executive Dashboard and Key Findings
 
-![Main Dashboard](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/Dashboard_Principal.jpg)
+![Main Dashboard](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/Main_dashboard.jpg)
 
 Based on the analysis of the modeled data, the following operational insights were extracted:
 * **Global Performance:** The operation maintains a revenue volume of **$67.407K**, supported by a solid base of **584 active clients**.
@@ -41,7 +41,7 @@ The project is supported by a robust relational infrastructure, optimized to fac
 1. **Original Database:** Deployment scripts and the native Entity-Relationship diagram are included within the `[database/](./database/)` folder to allow environment replication.
 2. **Analytical Model:** A structured model was implemented in Power BI, ensuring clean relationships between transaction tables and catalogs.
 
-![Relationship Model](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/modelo_relaciones.png)
+![Relationship Model](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/Relationship_model.png)
 
 ---
 
