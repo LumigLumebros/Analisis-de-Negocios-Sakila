@@ -1,50 +1,50 @@
-# Análisis de Rendimiento Operativo y Comercial - Sakila DB
+# Operational and Commercial Performance Analysis - Sakila DB
 
-Desarrollé este proyecto con el propósito de poner en práctica los conocimientos técnicos que he adquirido en mi formación como analista de datos. Mi objetivo principal fue tomar una fuente de información en bruto, como la base de datos relacional Sakila, y transformarla en un dashboard interactivo completamente listo para respaldar la toma de decisiones ejecutivas. Para lograrlo, me enfoqué en garantizar la absoluta integridad de la información para que se pueda tomar decisiones de forma confiable y sin miedo 
-
----
-
-## 🎯 Resolución de Preguntas de Negocio
-
-El dashboard centraliza múltiples fuentes de datos para dar respuesta inmediata a las siguientes interrogantes estratégicas:
-* ¿Cual ha sido la evolucion que ha llevado la empresa atravez del tiempo?
-* ¿Cuáles son las categorías de películas que lideran la demanda y aseguran el mayor retorno de inversión?
-* ¿Existe una distribución equitativa de las ventas y la carga operativa entre las sucursales?
-* ¿Cuál es el volumen total de ingresos del negocio y con cuántos clientes activos se cuenta actualmente?
+I developed this project with the purpose of putting into practice the technical knowledge I have acquired during my training as a data analyst. My main objective was to take a raw data source, such as the Sakila relational database, and transform it into an interactive dashboard fully ready to support executive decision-making. To achieve this, I focused on ensuring the absolute integrity of the information so that decisions can be made reliably and without fear.
 
 ---
 
-## 🔬 Metodología de Validación y Calidad del Dato
+## 🎯 Business Questions Addressed
 
-Antes de construir cualquier representación gráfica en Power BI, elaboré consultas SQL nativas para calcular los resultados exactos directamente en el motor de base de datos. Contrasté rigurosamente cada gráfico del panel con estas consultas para asegurar la veracidad de la información y eliminar sesgos, errores de agregación o relaciones mal definidas.
-
-Toda la auditoría y el código que utilicé para comprobar estas métricas visuales se encuentran documentados aquí:
-👉 **[Ver consultas de validación en Validacion_Metricas.sql](./Validacion_Metricas.sql)**
-
----
-
-## 📊 Dashboard Ejecutivo y Hallazgos Clave
-
-![Dashboard Principal](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/Dashboard_Principal.jpg)
-
-A partir del análisis de los datos modelados, se extrajeron los siguientes insights operativos:
-* **Rendimiento Global:** La operación mantiene un volumen de ingresos de **$67.407 mil**, respaldado por una base sólida de **584 clientes activos**.
-* **Inventario Estratégico:** Las categorías **'Animation'** y **'Sports'** superan sistemáticamente al resto del catálogo en recuento de rentas e ingresos. Es recomendable priorizar la adquisición de inventario en estos géneros.
-* **Equidad Operativa:** La distribución de ventas entre las sucursales de Woodridge (49.38%) y Lethbridge (50.62%) está perfectamente equilibrada, demostrando una estandarización exitosa en los procesos comerciales de ambas locaciones.
+The dashboard centralizes multiple data sources to provide immediate answers to the following strategic questions:
+* What has been the company's evolution over time?
+* Which movie categories lead the demand and ensure the highest return on investment?
+* Is there an equitable distribution of sales and operational workload between the branches?
+* What is the total revenue volume of the business, and how many active clients currently support it?
 
 ---
 
-## 📐 Arquitectura y Modelado de Datos
+## 🔬 Validation Methodology and Data Quality
 
-El proyecto se soporta sobre una infraestructura relacional robusta, optimizada para facilitar el filtrado cruzado y la eficiencia en las medidas DAX:
+Before building any graphical representation in Power BI, I developed native SQL queries to calculate the exact results directly in the database engine. I rigorously contrasted each chart on the dashboard with these queries to ensure data accuracy and eliminate biases, aggregation errors, or poorly defined relationships.
 
-1. **Base de Datos Original:** Se incluyen los scripts de despliegue y el diagrama Entidad-Relación nativo dentro de la carpeta `[database/](./database/)` para permitir la replicación del entorno.
-2. **Modelo Analítico:** Se implementó un modelo estructurado en Power BI, asegurando relaciones limpias entre las tablas de transacciones y los catálogos.
-
-![Modelo de Relaciones](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/modelo_relaciones.png)
+All the auditing and the code I used to verify these visual metrics are documented here:
+👉 **[View validation queries in Validacion_Metricas.sql](./Validacion_Metricas.sql)**
 
 ---
 
-## 🛠️ Stack Tecnológico
-* **MySQL:** Alojamiento local, exploración del esquema relacional y construcción de consultas de validación.
-* **Power BI:** Conexión directa a base de datos, modelado de relaciones y diseño de interfaz analítica.
+## 📊 Executive Dashboard and Key Findings
+
+![Main Dashboard](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/Dashboard_Principal.jpg)
+
+Based on the analysis of the modeled data, the following operational insights were extracted:
+* **Global Performance:** The operation maintains a revenue volume of **$67.407K**, supported by a solid base of **584 active clients**.
+* **Strategic Inventory:** The **'Animation'** and **'Sports'** categories consistently outperform the rest of the catalog in rental counts and revenue. It is advisable to prioritize inventory acquisition in these genres.
+* **Operational Equity:** The sales distribution between the Woodridge (49.38%) and Lethbridge (50.62%) branches is perfectly balanced, demonstrating successful standardization in the commercial processes of both locations.
+
+---
+
+## 📐 Data Architecture and Modeling
+
+The project is supported by a robust relational infrastructure, optimized to facilitate cross-filtering and efficiency in DAX measures:
+
+1. **Original Database:** Deployment scripts and the native Entity-Relationship diagram are included within the `[database/](./database/)` folder to allow environment replication.
+2. **Analytical Model:** A structured model was implemented in Power BI, ensuring clean relationships between transaction tables and catalogs.
+
+![Relationship Model](https://github.com/LumigLumebros/Analisis-de-Negocios-Sakila/blob/main/Assets/modelo_relaciones.png)
+
+---
+
+## 🛠️ Tech Stack
+* **MySQL:** Local hosting, relational schema exploration, and construction of validation queries.
+* **Power BI:** Direct database connection, relationship modeling, and analytical interface design.
